@@ -1,0 +1,51 @@
+/* BooksPage.css */
+
+.books-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .book-list {
+    display: grid;
+    grid-template-columns: 1fr; /* Arrange books in a single column */
+    grid-gap: 20px;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .book-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .book-number {
+    color: #ff0000; /* Change the color of the numbers */
+    font-weight: bold; /* Make the numbers bold */
+  }
+  
+  .book-number::after {
+    content: '. '; /* Add a period and a space after the number */
+  }
+  
+  .book-link {
+    text-decoration: none;
+    color: #f5f0f0;
+    font-weight: bold;
+  }
+  
+  .book-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Media query for screens smaller than 768px (mobile devices) */
+  @media (max-width: 768px) {
+    .books-container {
+      padding: 10px; /* Reduce padding for smaller screens */
+    }
+  
+    .book-item {
+      padding: 5px; /* Reduce padding for book items */
+    }
+  }
+  
